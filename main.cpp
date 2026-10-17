@@ -1,40 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main() {
-    int i,j,n;
-    cout << "Please enter the order of the matrix(n):";
-    cin >> n;
-    int arr[n][n], sol[n][n];
-
-    cout << "Please enter all the elements of the nxn matrix:" << endl; 
-   
-    for (i=0;i<n;i++) {
-      for (j=0;j<n;j++){
-         cin >> arr[i][j];
-
-
-      }
-   }
-    cout << "Calculating the Transpose...:" << endl;
-    for(i=0;i<n;i++){
-      for(j=0;j<n;j++){
-         sol[i][j]=arr[j][i];
-      }
-    }
-    cout << "The matrix is as follows:" << endl;
-    for (i=0;i<n;i++){
-      for (j=0;j>n;j++){
-         cout << sol[i][j];
+int main(){
+   // A Pointer is a variable that stores the memory address of another variable.
+   //a-1 block of 4 bytes, address-2002, value=5
+   // b-1 block of 4 bytes, address-5003,value=2.1
+   //c-1 block of <> byttes, adress-1001, value=<2002>
+   //d-1 block of <> bytes , adress =9002 , value=<5003>
+   int a=5;
+   float b=2.1;
+   int*c; // pointer-to-integer
+   c=&a;
+   float*d=&b; // pointer-to-float
+   int arr[10]; // {1,1,1,1,1,1,.....}
+   return 0;
 
 
-      }
-    }
-   
-    
-     
 
 
-    
-    return 0;
-    
 }
